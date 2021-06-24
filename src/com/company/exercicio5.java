@@ -4,17 +4,10 @@ import java.util.Scanner;
 
 public class exercicio5 {
     public static void main(String[] args) {
-        int M, CM, result;
-        CM = 100;
-
+        //aça um Programa que converta metros para centímetros.
         Scanner sc = new Scanner(System.in);
-        System.out.println("Insira a distância em Metros:");
-        M = sc.nextInt();
-
-        sc.close();
-
-        result = M * CM;
-
-        System.out.println(M + "m, Equivale a: " + result + "cm");
+        System.out.println("Digite um valor em metro para ser convertido em cm");
+        double conversao = sc.nextDouble() * 100;
+        System.out.println("O valor digitado equivale a: "+conversao+"cm");
     }
 }
